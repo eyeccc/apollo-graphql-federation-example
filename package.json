@@ -1,0 +1,26 @@
+{
+  "name": "apollo-graphql-federation-example",
+  "version": "1.0.0",
+  "description": "example for demo how to adapt graphql federation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eyeccc/apollo-graphql-federation-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eyeccc/apollo-graphql-federation-example/issues"
+  },
+  "homepage": "https://github.com/eyeccc/apollo-graphql-federation-example#readme",
+  "dependencies": {
+    "@apollo/federation": "^0.11.3",
+    "@apollo/gateway": "^0.11.7",
+    "apollo-server": "^2.9.16",
+    "graphql": "^14.5.8"
+  }
+}
