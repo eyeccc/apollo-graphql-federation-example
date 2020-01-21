@@ -31,6 +31,10 @@ const typeDefs = gql`
   type Query {
       allPhotos: [Photo!]!
   }
+
+  type Mutation {
+      updatePhotos(id: String!, url: String!): Photo
+  }
 `;
 
 const photos = [
@@ -81,7 +85,14 @@ const resolvers = {
       return photos.find(p => p.id === object.id);
     }
   },
-  
+  Mutation: {
+    updatePhotos: (_, params) => {
+      const {id, url} = params;
+      const p = photos.find(photo => photo.id === id);
+      if(p) p.url = url;
+      return p;
+    }
+  },
 };
 
 const server = new ApolloServer({
