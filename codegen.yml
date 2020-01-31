@@ -1,0 +1,10 @@
+overwrite: true
+generates:
+  generated/GraphQLTypes.tsx:
+    schema:
+      - 'http://localhost:4100/graphql'
+    plugins:
+      - add: '// THIS IS A GENERATED FILE'
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
