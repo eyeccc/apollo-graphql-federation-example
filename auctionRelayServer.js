@@ -1,3 +1,6 @@
+// COPIED FROM https://github.com/alecaivazis/schema-federation-demo
+// and modify accordingly
+
 const { ApolloServer, gql } = require("apollo-server");
 const { fromGlobalId, toGlobalId } = require("graphql-relay");
 const { buildFederatedSchema } = require('@apollo/federation');

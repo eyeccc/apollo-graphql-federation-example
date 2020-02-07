@@ -6,7 +6,7 @@ const { ApolloGateway } = require("@apollo/gateway");
 const gateway = new ApolloGateway({
   serviceList: [
     { name: 'auctions-relay', url: 'http://localhost:3000' },
-    //{ name: 'auctions', url: 'http://localhost:4001' },
+    { name: 'auctions', url: 'http://localhost:4001' },
     { name: 'photos', url: 'http://localhost:4000' },
     // more services
   ],
